@@ -1,0 +1,378 @@
+%-------------------------
+% Resume in Latex
+% Author : Mostafa Tabatabaei
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+% Main Author (my edition on): Jake Gutierrez, 
+%------------------------
+
+\documentclass[a4paper, 11pt, sans]{article}
+
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage[plain]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage{setspace}
+\usepackage{ragged2e}
+
+%----------FONT OPTIONS----------
+% sans-serif
+\usepackage[sfdefault]{noto-sans}
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[default]{sourcesanspro}
+% \usepackage{fontawesome}
+
+% serif
+%\usepackage{CormorantGaramond}
+%\usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+	\vspace{-4pt}\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+	\item\small\justifying{
+		{#1 \vspace{-2pt}}
+	}
+}
+
+\newcommand{\classesList}[4]{
+	\item\small{
+		{#1 #2 #3 #4 \vspace{-2pt}}
+	}
+}
+
+\newcommand{\resumeSubheading}[4]{
+	\vspace{-2pt}\item
+	\begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & \textbf{\small #2} \\
+		\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingmosi}[4]{
+	\vspace{-1pt}\item
+	\textbf{#1} \hfill \textbf{\small #2} \\
+	\textit{\small#3} \hfill \textit{\small #4} \\
+	\vspace{2pt}
+}
+
+
+
+\newcommand{\resumeSubSubheading}[2]{
+	\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\textit{\small#1} & \textit{\small #2} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+	\item
+	\begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+		\small#1 & \textbf{\small #2}\\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+	\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+	\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\ts}{\textsuperscript}
+
+\newcommand*{\authorimg}[1]{%
+	\raisebox{-.3\baselineskip}{%
+		\includegraphics[
+		height=\baselineskip,
+		width=\baselineskip,
+		keepaspectratio,
+		]{#1}%
+	}%
+}
+
+\newcommand{\publicationtemp}[1]{
+	\begin{itemize}
+		\item \small \justifying #1
+	\end{itemize}
+}
+
+\newcommand{\paper}[3]{
+	#1, “#2”, #3
+}
+
+
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+	
+	\begin{center}
+		
+		{\Huge Mostafa Tabatabaei} \\ \vspace{2pt} 
+		University of Tehran, College of Engineering, Institute of Petroleum Engineering (IPE)
+		\vspace{5pt}
+		
+		\begin{multicols}{2}
+			\small \raisebox{-0.1\height}\faPhone\ (+98)9133526459 ~ 
+			
+			\href{https://github.com/tabatabaei-mosi}{\raisebox{-0.2\baselineskip}\faGithub\ {github.com/tabatabaei-mosi}}
+			
+			\href{mailto:tabatabaei.mosi@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  {tabatabaei.mosi@gmail.com}} ~
+			
+			\href{https://www.linkedin.com/in/mostafa-tabatabaei-33250519a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BqGy0Rh1ZRaibu4R%2FFDrLiQ%3D%3D}{\raisebox{-0.2\baselineskip}\faLinkedin\ {linkedin.com/in/mostafa-tabatabaei}}  ~
+			
+			\vspace{-8pt}
+		\end{multicols}
+	\end{center}
+	
+	
+%-----------EDUCATION-----------
+\section{Education}
+	\resumeSubHeadingListStart
+	\resumeSubheadingmosi
+	% {\href{https://www.ut.ac.ir/en}{University of Tehran}}
+	{\authorimg{images/UT.png} \href{https://www.ut.ac.ir/en}{University of Tehran}}{Sep 2018 -- Sep 2022}
+	{\hspace{0.65cm}Bachelor of Science in Petroleum Engineering}{GPA: 3.6/4}
+	\resumeSubHeadingListEnd
+	
+	
+	
+%------Research Interest-------
+\section{Research Interest}
+	%\resumeSubHeadingListStart
+	 \begin{multicols}{2}
+		\begin{itemize}[itemsep=-2pt, parsep=3pt]
+			\item \small Machine Learning $|$ Deep Learning 
+			\item \small Optimization
+			\item \small Underground Gas Storage (UGS)
+			\item \small Enhance Oil Recovery (EOR)
+		\end{itemize}
+		 \end{multicols}
+	% \vspace*{2.0\multicolsep}
+	%\resumeSubHeadingListEnd
+	
+	
+%-----------EXPERIENCE-----------
+	\section{Experience}
+	\resumeSubHeadingListStart
+	
+	\resumeSubheading
+	{Internship}{July 2021 -- Sep 2021}
+	{\authorimg{images/Persia.png} \href{http://www.persia-oil.com/index.aspx?siteid=3}{Persia Oil and Gas Company}}{Tehran, Iran}
+	\resumeItemListStart
+	\resumeItem{Analyzing the effect of various operational parameters on multi-phase flow behavior by OLGA software}
+	\resumeItemListEnd
+		
+	\resumeSubheading
+	{Research Assistant}{Jan 2021 -- Present}
+	{\authorimg{images/UT.png} \href{https://ipe.ut.ac.ir/}{Institute of Petroleum Engineering (IPE), Tehran University}}{Tehran, Iran}
+	\resumeItemListStart
+	\resumeItem{Supervisor: Dr. Behnam Sedaee}
+	\resumeItemListEnd
+	
+	\resumeSubheading
+	{Teaching Assistant}{Jan 2022 -- Jun 2022}
+	{\authorimg{images/UT.png} \href{https://ipe.ut.ac.ir/}{Institute of Petroleum Engineering (IPE)}, Tehran University}{Tehran, Iran}
+	\resumeItemListStart
+	\resumeItem{Reservoir Engineering II}
+	\resumeItem{Instructor: Dr. Behnam Sedaee}
+	\resumeItemListEnd
+	
+	\resumeSubHeadingListEnd
+	\vspace{-12pt}
+	
+
+% ----------- Publications -------------
+\section{Publications}
+\vspace{2pt}
+\publicationtemp{\paper{Mostafa Gilavand, Zahra Almahmoodi, \textbf{S. Mostafa Tabatabaei}, Fatemeh Eghbali, Behnam Sedaee, Shahrzad Sajadi}{New dynamic methods of reservoir cut off determination at heterogeneous reservoir: Azadeghan field case study}{3\textsuperscript{rd} International Conference on the New Technologies in the Oil, Gas and Petrochemical Industries.}}{}
+
+%\publicationtemp{\paper{\textbf{S. Mostafa Tabatabaei}, Nikta Attari, S. Amirali Panahi, Mohsen Faramarzi-Palangar, Behnam Sedaee}{A comprehensive study of capillary pressure and relative permeability models in CO\textsubscript{2}--brine system}{Journal of Natural Resources Research (NRR), 2022. (\textit{Under review})}}
+%
+%\publicationtemp{\paper{\textbf{S. Mostafa Tabatabaei}, Nikta Attari, S. Amirali Panahi, Mojtaba Asadian-Pakfar, Behnam Sedaee}{EOR screening using optimized artificial neural network by Sparrow Search Algorithm}{Journal of Petroleum Science and Engineering (JPSE), 2022. (\textit{Under review})}}
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+	\vspace{-5pt}
+	\resumeSubHeadingListStart
+	\resumeProjectHeading
+	{\textbf{Carbon Capture and Storage} $|$ \emph{Python, Curve Fit}}{Sep 2021 -- Present}
+	\resumeItemListStart
+	\resumeItem{Collecting all the experimental data available in the CO\textsubscript{2} - brine system}
+	\resumeItem{Investigation of various capillary pressure and relative permeability models to identify appropriate model for simulation and prediction of flow behavior in the CO\textsubscript{2} - brine system}
+	\resumeItem{\paper{\textbf{S. Mostafa Tabatabaei}, Nikta Attari, S. Amirali Panahi, Mohsen Faramarzi-Palangar, Behnam Sedaee}{A comprehensive study of capillary pressure and relative permeability models in CO\textsubscript{2}--brine system}{Journal of Natural Resources Research (NRR), 2022. (\textit{Under review})}}
+	\resumeItemListEnd 
+	\vspace{-13pt}
+	
+	\resumeProjectHeading
+	{\textbf{EOR Screening} $|$ \emph{Python, Machine Learning, Optimization}}{Nov 2021 -- Aug 2022}
+	\resumeItemListStart
+	\resumeItem{Implementation of Sparrow Search Optimization Algorithm (SSA)}
+	\resumeItem{Training an artificial neural network (ANN) with deep learning for EOR screening}
+	\resumeItem{Optimization of ANN by SSA}
+	\resumeItem{{\paper{\textbf{S. Mostafa Tabatabaei}, Nikta Attari, S. Amirali Panahi, Mojtaba Asadian-Pakfar, Behnam Sedaee}{EOR screening using optimized artificial neural network by Sparrow Search Algorithm}{Journal of Petroleum Science and Engineering (JPSE), 2022. (\textit{Under review})}}}
+	\resumeItemListEnd 
+	\vspace{-13pt}
+	
+	\resumeProjectHeading
+	{\textbf{Well Placement Optimization} $|$ \emph{Python, Eclipse, Optimization}}{Sep 2022 -- Present}
+	\resumeItemListStart
+	\resumeItem{Optimization of production and injection well locations with Sparrow Search Algorithm}
+	\resumeItem{Using a new index for creating Quality map}
+	\resumeItem{Case Study: Yadavaran Oil Field}
+	\resumeItemListEnd 
+	\vspace{-10pt}
+	
+	\resumeProjectHeading
+	{\textbf{Oil and Gas Field Development Strategy}}{Nov 2022 -- Present}
+	\resumeItemListStart
+	\resumeItem{A study on the recovery factor of successful fields in the world}
+	\resumeItem{Investigating the laws and policies of governments regarding to oil and gas field development}
+	\resumeItemListEnd 
+	\vspace{-10pt}
+	
+	\resumeProjectHeading
+	{\textbf{Material Balance For Hydrate-capped Gas Reservoirs} $|$ \emph{Coure Project}}{Mar 2021 -- May 2021}
+	\resumeItemListStart
+	\resumeItem{A study on the formation of gas hydrate}
+	\resumeItem{Material balance analysis in hydrate-capped gas reservoirs}
+	\resumeItemListEnd 
+	\vspace{-10pt}
+	
+	\resumeProjectHeading
+	{\textbf{Sudoku Solver Application} $|$ \emph{Course Project}}{Jan 2019}
+	\resumeItemListStart
+	\resumeItem{A GUI based application for solving Sudoku}
+	\resumeItemListEnd 
+	%	
+	\resumeSubHeadingListEnd
+	\vspace{-12pt}
+	
+	
+\section{Honors and Awards}
+	\vspace{-5pt}
+	\resumeSubHeadingListStart
+	\resumeProjectHeading
+	{\textbf{Top Rank Certification at Faculty of Engineering (FOE)}}{Sep 2021}
+	\resumeItemListStart
+	\resumeItem{Ranked 4\ts{th} among 25\ts{th} student}
+	\resumeItemListEnd
+	\resumeSubHeadingListEnd 
+	\vspace{-13pt}
+		
+	
+%
+%-----------PROGRAMMING SKILLS-----------
+	\section{Technical Skills}
+	\begin{itemize}[leftmargin=0.15in, label={}]
+		\small{\item{
+				\textbf{Programming/Scripting}{: Python, Visual Basic, \LaTeX} \\
+				\textbf{Developer Tools}{: VS Code, Linux, GitHub} \\
+				\textbf{Frameworks}{: Numpy, Pandas, Tensorflow, Scikit-learn, Matplotlib} \\
+				\textbf{Softwares}{: Saphir, OLGA, Microsoft Office} \\
+				\textbf{Soft skills}{: Teamwork, Project Management, Fast Learner} \\
+		}}
+	\end{itemize}
+	\vspace{-16pt}
+	
+	
+%-----------Languages---------------
+\section{Languages}
+	\begin{itemize}[leftmargin=0.15in, label={}]
+		\small{\item{
+				\textbf{Persian}{: Native} \\
+				\textbf{English}{: Fluent} \\
+		}}
+	\end{itemize}
+	\vspace{-16pt}
+	
+	
+	
+%------RELEVANT COURSEWORK-------
+\section{Relevant Course}
+	\begin{multicols}{3}
+		\begin{itemize}[itemsep=-1pt, parsep=4pt]
+			\item\small Reservoir Rock Properties (4/4)
+			\item Reservoir Engineering I, II (4/4)
+			\item Enhanced Oil Recovery (4/4)
+			\item Well Testing (4/4)
+			\item Well Loging (4/4)
+			\item Production Engineering (4/4)
+		\end{itemize}
+	\end{multicols}
+%	\vspace*{2.0\multicolsep}
+
+
+	
+%------Online COURSE-------
+%\section{Online Course}
+%%\resumeSubHeadingListStart
+%\begin{multicols}{2}
+%	\begin{itemize}[itemsep=-5pt, parsep=3pt]
+%		\item\small Data Structures
+%		\item Software Methodology
+%		\item Algorithms Analysis
+%		\item Database Management
+%		\item Artificial Intelligence
+%		\item Internet Technology
+%		\item Systems Programming
+%		\item Computer Architecture
+%	\end{itemize}
+%\end{multicols}
+%\vspace*{2.0\multicolsep}
+%%\resumeSubHeadingListEnd
+	
+%------References-------
+\section{References}
+\vspace{5pt}
+\centering{\textbf{	\faExclamationCircle \hspace{0.5 pt} References, Further information, and Proofs are available upon Request}
+
+
+\end{document}
