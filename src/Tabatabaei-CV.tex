@@ -7,6 +7,7 @@
 %------------------------
 
 \documentclass[a4paper, 11pt, sans]{article}
+\usepackage{adjustbox}
 
 \usepackage{latexsym}
 \usepackage{graphicx}
@@ -124,15 +125,25 @@
 	\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 \newcommand{\ts}{\textsuperscript}
 
+%\newcommand*{\authorimg}[1]{%
+%	\raisebox{-.3\baselineskip}{%
+%		\includegraphics[
+%		height=\baselineskip,
+%		width=\baselineskip,
+%		keepaspectratio,
+%		]{#1}%
+%	}%
+%}
+
+\usepackage{graphicx}
+
 \newcommand*{\authorimg}[1]{%
 	\raisebox{-.3\baselineskip}{%
-		\includegraphics[
-		height=\baselineskip,
-		width=\baselineskip,
-		keepaspectratio,
-		]{#1}%
+		\includegraphics[      height=\baselineskip,      width=\baselineskip,      keepaspectratio,    ]{#1}%
 	}%
 }
+
+
 
 \newcommand{\publicationtemp}[1]{
 	\begin{itemize}
@@ -158,17 +169,19 @@
 		University of Tehran, College of Engineering, Institute of Petroleum Engineering (IPE)
 		\vspace{5pt}
 		
+
 		\begin{multicols}{2}
-			\small \raisebox{-0.1\height}\faPhone\ (+98)9133526459 ~ 
+			\small\faPhone\ (+98) 913 352 6459
 			
-			\href{https://github.com/tabatabaei-mosi}{\raisebox{-0.2\baselineskip}\faGithub\ {github.com/tabatabaei-mosi}}
+			\faGithub\ \href{https://github.com/tabatabaei-mosi}{github.com/tabatabaei-mosi}
 			
-			\href{mailto:tabatabaei.mosi@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  {tabatabaei.mosi@gmail.com}} ~
+			\faEnvelope\ \href{mailto:tabatabaei.mosi@gmail.com}{tabatabaei.mosi@gmail.com}
 			
-			\href{https://www.linkedin.com/in/mostafa-tabatabaei-33250519a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BqGy0Rh1ZRaibu4R%2FFDrLiQ%3D%3D}{\raisebox{-0.2\baselineskip}\faLinkedin\ {linkedin.com/in/mostafa-tabatabaei}}  ~
+			\faLinkedin\ \href{https://www.linkedin.com/in/mostafa-tabatabaei-33250519a}{linkedin.com/in/mostafa-tabatabaei}
 			
-			\vspace{-8pt}
+			\vspace{8pt}
 		\end{multicols}
+
 	\end{center}
 	
 	
@@ -178,7 +191,7 @@
 	\resumeSubheadingmosi
 	% {\href{https://www.ut.ac.ir/en}{University of Tehran}}
 	{\authorimg{images/UT.png} \href{https://www.ut.ac.ir/en}{University of Tehran}}{Sep 2018 -- Sep 2022}
-	{\hspace{0.65cm}Bachelor of Science in Petroleum Engineering}{GPA: 3.6/4}
+	{\hspace{0.65cm}Bachelor of Science in Petroleum Engineering}{GPA: 17.51/20 (3.6/4)}
 	\resumeSubHeadingListEnd
 	
 	
@@ -209,9 +222,19 @@
 
 
 %-----------PROJECTS-----------
-\section{Research Experience}
+\section{Research Experience and Projects}
 	\vspace{-5pt}
 	\resumeSubHeadingListStart
+	
+	\resumeProjectHeading
+	{\textbf{Cut-Off Determination} $|$ \emph{Excel, VBA}}{Mar 2021 -- Sep 2021}
+	\resumeItemListStart
+	\resumeItem{Conducted research project to determine cut-off value for a heterogeneous reservoir of Azadegan oil field.}
+	\resumeItem{Used conventional and modern methods to calculate cut-off and compared results to show advantages of modern method for a heterogeneous reservoir.}
+	\resumeItem{Analyzed large amounts of field data, including well tests, SCAL, RCAL, MICP, PVT, well log data, etc.}
+	\resumeItem{Developed industrial software to incorporate modern methods for calculating cut-off value in heterogeneous reservoirs.}
+	\resumeItemListEnd 
+	\vspace{-13pt}
 	
 	\resumeProjectHeading
 	{\textbf{Carbon Capture and Storage} $|$ \emph{Python, Curve Fit}}{Sep 2021 -- May 2022}
@@ -279,7 +302,8 @@
 {Internship}{July 2021 -- Sep 2021}
 {\authorimg{images/Persia.png} \href{http://www.persia-oil.com/index.aspx?siteid=3}{Persia Oil and Gas Company}}{Tehran, Iran}
 \resumeItemListStart
-\resumeItem{Analyzing the effect of various operational parameters on multi-phase flow behavior by OLGA software}
+\resumeItem{Gained hands-on experience with production engineering tasks and workflows.}
+\resumeItem{Conducted a project on modeling multi-fluid flow behavior from reservoir to surface facilities using OLGA software.}
 \resumeItemListEnd
 
 \resumeSubheading
@@ -312,32 +336,6 @@
 	\vspace{-13pt}
 		
 	
-%
-%-----------PROGRAMMING SKILLS-----------
-	\section{Technical Skills}
-	\begin{itemize}[leftmargin=0.15in, label={}]
-		\small{\item{
-				\textbf{Programming/Scripting}{: Python, Visual Basic, \LaTeX} \\
-				\textbf{Developer Tools}{: VS Code, Linux, GitHub} \\
-				\textbf{Frameworks}{: Numpy, Pandas, Tensorflow, Scikit-learn, Matplotlib} \\
-				\textbf{Softwares}{: Saphir, OLGA, Microsoft Office} \\
-				\textbf{Soft skills}{: Teamwork, Project Management, Fast Learner} \\
-		}}
-	\end{itemize}
-	\vspace{-16pt}
-	
-	
-%-----------Languages---------------
-\section{Languages}
-	\begin{itemize}[leftmargin=0.15in, label={}]
-		\small{\item{
-				\textbf{Persian}{: Native} \\
-				\textbf{English}{: Fluent} \\
-		}}
-	\end{itemize}
-	\vspace{-16pt}
-	
-	
 	
 %------RELEVANT COURSEWORK-------
 \section{Relevant Course}
@@ -356,26 +354,47 @@
 
 	
 %------Online COURSE-------
-%\section{Online Course}
-%%\resumeSubHeadingListStart
-%\begin{multicols}{2}
-%	\begin{itemize}[itemsep=-5pt, parsep=3pt]
-%		\item\small Data Structures
-%		\item Software Methodology
-%		\item Algorithms Analysis
-%		\item Database Management
-%		\item Artificial Intelligence
-%		\item Internet Technology
-%		\item Systems Programming
-%		\item Computer Architecture
-%	\end{itemize}
-%\end{multicols}
-%\vspace*{2.0\multicolsep}
-%%\resumeSubHeadingListEnd
+\section{Online Course}
+\begin{multicols}{2}
+	\begin{itemize}[itemsep=-1pt, parsep=4pt]
+		\item\small \authorimg{images/ds-algorithm.png} \href{https://maktabkhooneh.org/course/189-%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C-%D8%A7%D9%84%DA%AF%D9%88%D8%B1%DB%8C%D8%AA%D9%85-mk189/}{Data Structure and Algorithm}
+		\item \authorimg{images/python.png} \href{https://www.pytopia.ai/course/python}{Python Programming}
+		\item \authorimg{images/git.png} \href{https://www.pytopia.ai/course/git}{Git}
+		\item \authorimg{images/ml.png} \href{https://www.coursera.org/specializations/machine-learning-introduction}{Machine Learning Specialization}
+		\item \authorimg{images/ml-logo.png} \href{https://www.pytopia.ai/course/ml}{Machine Learning Basics}
+		\item \authorimg{images/ubuntu.jpg} \href{https://www.udemy.com/course/linux-administration-bootcamp/}{Linux Administration Bootcamp: Go from Beginner to Advanced}
+	\end{itemize}
+\end{multicols}
+\vspace*{2.0\multicolsep}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+	\small{\item{
+			\textbf{Programming/Scripting}{: Python, Visual Basic, \LaTeX} \\
+			\textbf{Developer Tools}{: VS Code, Pycharm, Linux, Git} \\
+			\textbf{Frameworks}{: Numpy, Pandas, Tensorflow, Scikit-learn, Matplotlib, Seaborn, Qt} \\
+			\textbf{Softwares}{: Saphir, Eclipse, OLGA, Microsoft Office} \\
+			\textbf{Soft skills}{: Teamwork, Project Management, Fast Learner, Problem-solving, Initiative} \\
+	}}
+\end{itemize}	
+\vspace{-16pt}
+
+
+
+%-----------Languages---------------
+\section{Languages}
+\begin{itemize}[leftmargin=0.15in, label={}]
+	\small{\item{
+			\textbf{Persian}{: Native} \\
+			\textbf{English}{: Fluent (TOEFL iBT will be taken on 20\textsuperscript{th} Aug.)} \\
+	}}
+\end{itemize}
+\vspace{-16pt}
 	
 %------References-------
-\vspace{0.5cm}
-\centering{\textbf{	\faExclamationCircle \hspace{0.5 pt} References, Further information, and Proofs are available upon Request}
+\vspace{0.75cm}
+\centering{\textbf{	\faExclamationCircle \hspace{0.5 pt} References, Further information, and Proofs are available upon Request.}
 
 
 \end{document}
