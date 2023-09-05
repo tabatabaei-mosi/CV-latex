@@ -1,0 +1,455 @@
+%-------------------------
+% Resume in Latex
+% Author : Mostafa Tabatabaei
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+% Main Author (my edition on): Jake Gutierrez, 
+%------------------------
+
+\documentclass[a4paper, 11pt, sans]{article}
+\usepackage{xepersian}
+\settextfont{Yas}
+\usepackage{adjustbox}
+\usepackage{academicons}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage[plain]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	urlcolor=black,
+	citecolor=black
+}
+
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage{setspace}
+\usepackage{ragged2e}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+%\usepackage[sfdefault]{noto-sans}
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+\usepackage[default]{sourcesanspro}
+% \usepackage{fontawesome}
+
+% serif
+%\usepackage{CormorantGaramond}
+%\usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+	\vspace{-4pt}\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+	\item\small\justifying{
+		{#1 \vspace{-2pt}}
+	}
+}
+
+\newcommand{\classesList}[4]{
+	\item\small{
+		{#1 #2 #3 #4 \vspace{-2pt}}
+	}
+}
+
+\newcommand{\resumeSubheading}[4]{
+	\vspace{-2pt}\item
+	\begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & \textbf{\small #2} \\
+		\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingmosi}[4]{
+	\vspace{-1pt}\item
+	\textbf{#1} \hfill \textbf{\small #2} \\
+	\textit{\small#3} \hfill \textit{\small #4} \\
+	\vspace{2pt}
+}
+
+
+
+\newcommand{\resumeSubSubheading}[2]{
+	\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\textit{\small#1} & \textit{\small #2} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+	\item
+	\begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+		\small#1 & \textbf{\small #2}\\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+	\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+	\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\ts}{\textsuperscript}
+
+%\newcommand*{\authorimg}[1]{%
+%	\raisebox{-.3\baselineskip}{%
+%		\includegraphics[
+%		height=\baselineskip,
+%		width=\baselineskip,
+%		keepaspectratio,
+%		]{#1}%
+%	}%
+%}
+
+\usepackage{graphicx}
+
+\newcommand*{\authorimg}[1]{%
+	\raisebox{-.3\baselineskip}{%
+		\includegraphics[      height=\baselineskip,      width=\baselineskip,      keepaspectratio,    ]{#1}%
+	}%
+}
+
+
+
+\newcommand{\publicationtemp}[1]{
+	\begin{itemize}
+		\item \small \justifying #1
+	\end{itemize}
+}
+
+\newcommand{\paper}[3]{
+	#1, “#2”, #3
+}
+
+\definecolor{navyblue}{RGB}{0, 83, 137}
+
+\newcommand{\bluesection}[1]{
+	\textcolor{navyblue}{\textit{#1}}
+}
+
+
+\newcommand*{\scholarsocialsymbol}{\includegraphics[height=.7\baselineskip]{google-scholar}}
+
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+	
+%	\begin{center}
+		
+		{\Huge مثطفی} \\ \vspace{2pt} 
+		دانشگاه
+		\vspace{5pt}
+		
+%	\end{center}
+%			\begin{multicols}{3}
+%				\hspace*{2.5cm} \small\faPhone\ (+98) 913 352 6459
+%				
+%				\hspace*{2.5cm} \faGithub\ \href{https://github.com/tabatabaei-mosi}{tabatabaei-mosi}
+%				
+%				\hspace*{1cm} \faEnvelope\ \href{mailto:tabatabaei.mosi@gmail.com}{tabatabaei.mosi@gmail.com}
+%				
+%				\hspace*{1cm} \faLinkedin\ \href{https://www.linkedin.com/in/tabatabaei-mosi}{tabatabaei-mosi}
+%				
+%				
+%				\hspace*{1cm} \faOrcid\ \href{https://orcid.org/0000-0003-4126-9260}{ORCID}
+%				
+%				\hspace*{1cm} \scholarsocialsymbol\ \href{https://scholar.google.com/citations?user=_4SuHMEAAAAJ&hl=en}{Google Scholar}
+%				
+%				\vspace{8pt}
+%			\end{multicols}
+
+
+%
+%
+%
+%	
+%\vspace{2pt}	
+%%-----------EDUCATION-----------
+%\section{\bluesection{Education}}
+%	\resumeSubHeadingListStart
+%	\resumeSubheadingmosi
+%	% {\href{https://www.ut.ac.ir/en}{University of Tehran}}
+%	{\authorimg{images/UT.png} \href{https://www.ut.ac.ir/en}{University of Tehran}}{Sep 2018 -- Sep 2022}
+%	{\hspace{0.65cm}Bachelor of Science in Petroleum Engineering}{GPA: 17.51/20 (3.6/4)}
+%	\resumeSubHeadingListEnd
+%	
+%	
+%%\vspace{2pt}	
+%%------Research Interest-------
+%\section{\bluesection{Research Interest}}
+%	%\resumeSubHeadingListStart
+%	 \begin{multicols}{2}
+%		\begin{itemize}[itemsep=-2pt, parsep=3pt]
+%			\item \small Machine Learning $|$ Deep Learning 
+%			\item \small Optimization
+%			\item \small Underground Gas Storage (UGS)
+%			\item \small Enhance Oil Recovery (EOR)
+%%			\item \small 
+%		\end{itemize}
+%		 \end{multicols}
+%	% \vspace*{2.0\multicolsep}
+%	%\resumeSubHeadingListEnd
+%	
+%	
+%\vspace{2pt}	
+%% ----------- Publications -------------
+%\section{\bluesection{Publications}}
+%\vspace{2pt}
+%\publicationtemp{\paper{Mostafa Gilavand, Zahra Almahmoodi, \textbf{S. Mostafa Tabatabaei}, Fatemeh Eghbali, Behnam Sedaee, Shahrzad Sajadi}{New dynamic methods of reservoir cut off determination at heterogeneous reservoir: Azadeghan field case study}{3\textsuperscript{rd} International Conference on the New Technologies in the Oil, Gas and Petrochemical Industries.}}{}
+%
+%\publicationtemp{\paper{\textbf{S. Mostafa Tabatabaei}, Nikta Attari, S. Amirali Panahi, Mojtaba Asadian-Pakfar, Behnam Sedaee}{EOR screening using optimized artificial neural network by Sparrow Search Algorithm}{Journal of Geoenergy Science and Engineering (formerly known as JPSE), 2023. \href{https://doi.org/10.1016/j.geoen.2023.212023}{DOI: \textcolor{navyblue}{doi.org/10.1016/j.geoen.2023.212023}}}}
+%
+%\publicationtemp{\paper{\textbf{S. Mostafa Tabatabaei}, Mojtaba Asadian-Pakfar, Behnam Sedaee}{Well placement optimization with a novel swarm intelligence optimization algorithm: Sparrow Search Algorithm}{Journal of Geoenergy Science and Engineering, 2023. (\textit{Under revision})}}
+%
+%\publicationtemp{\paper{\textbf{S. Mostafa Tabatabaei}, Nikta Attari, S. Amirali Panahi, Mohsen Faramarzi-Palangar, Behnam Sedaee}{A comprehensive study of capillary pressure and relative permeability models in CO\textsubscript{2}--brine system}{Environmental Earth Science, 2023. (\textit{Under review})}}
+%
+%
+%%\vspace{2pt}
+%%-----------PROJECTS-----------
+%\section{\bluesection{Research Experience and Projects}}
+%	\vspace{-5pt}
+%	\resumeSubHeadingListStart
+%	
+%	\resumeProjectHeading
+%	{\textbf{Reservoir Cut-Off Determination} $|$ \emph{Excel, VBA, Python, Deep Learning}}{Mar 2021 -- Sep 2021 | July 2023 -- Present}
+%	\resumeItemListStart
+%	\resumeItem{Conducted a research project in determining the cut-off value for a heterogeneous reservoir in the Azadegan oil field.}
+%	\resumeItem{Employed a combination of conventional and modern methods to calculate cut-off values and demonstrated the advantages of modern methods for heterogeneous reservoirs.}
+%	\resumeItem{Analyzed extensive field data, including well tests, SCAL, RCAL, MICP, PVT, and well log data.}
+%	\resumeItem{Developed industrial software to integrate modern methods for calculating cut-off values in heterogeneous reservoirs.}
+%	\resumeItem{\textbf{\textit{Expanded Research Scope:}} Recently, extended the project to employ machine learning methods, aiming to address the complexities of cut-off determination within heterogeneous reservoirs.}
+%	\resumeItemListEnd 
+%	\vspace{-13pt}
+%	
+%	\resumeProjectHeading
+%	{\textbf{Carbon Capture and Storage} $|$ \emph{Python, Curve Fit}}{Sep 2021 -- May 2022}
+%	\resumeItemListStart
+%	\resumeItem{Conducted a comprehensive study on capillary pressure and relative permeability models.}
+%	\resumeItem{Gathered over 90 capillary pressure and 60 relative permeability experimental data points for CO\textsubscript{2}-brine through an extensive literature review.}
+%	\resumeItem{Utilized Python programming and curve fitting techniques to evaluate 11 capillary pressure models and six relative permeability models, selecting the best fit.}
+%	\resumeItemListEnd 
+%	\vspace{-13pt}
+%	
+%	\resumeProjectHeading
+%	{\textbf{EOR Screening} $|$ \emph{Python, Machine Learning, Optimization}}{Nov 2021 -- Aug 2022}
+%	\resumeItemListStart
+%	\resumeItem{Collected and pre-processed over 300 EOR samples for model training.}
+%	\resumeItem{Implemented the neural network using the Keras framework and enhanced its accuracy through SSA optimization.}
+%	\resumeItem{Demonstrated proficiency in machine learning techniques and optimization algorithms.}
+%	\resumeItemListEnd 
+%	\vspace{-13pt}
+%	
+%	\resumeProjectHeading
+%	{\textbf{Well Placement Optimization} $|$ \emph{Python, Eclipse, Optimization, Industrial Project}}{Sep 2022 -- Jun 2023 | Aug 2023 -- Present}
+%	\resumeItemListStart
+%	\resumeItem{Developed a reservoir simulation model using Eclipse software to represent the Yadavaran oil field in Iran.}
+%	\resumeItem{Utilized two optimization algorithms, Particle Swarm Optimization (PSO) and Sparrow Search Algorithm (SSA), to determine the optimal locations for production and injection wells under various scenarios.}
+%	\resumeItem{Developed and implemented a Quality Map concept to enhance accuracy and efficiency in well placement optimization.}
+%	\resumeItem{\textbf{\textit{Expanded Research Scope:}} Recently, expanded the project's scope by integrating additional meta-heuristic algorithms and machine learning approaches for optimizing well location, trajectory, and flow rate within an Iranian oil field. The final scope of the project is to develop an industrial software.}
+%	\resumeItemListEnd 
+%	\vspace{-10pt}
+%	
+%	\resumeProjectHeading
+%	{\textbf{Rock Typing}  $|$ \emph{Literature Review, Simulation, Experimental Design, Mathematical Analysis}}{Apr 2023 -- Present}
+%	\resumeItemListStart
+%		\resumeItem{Conducted an extensive review of well-known rock typing methods, including FZI, FZI*, etc., to gain insights into existing methodologies.}
+%		\resumeItem{Led the development of a new rock type index, integrating mathematical, physical, and experimental principles, to advance reservoir characterization techniques.}
+%		\resumeItem{Performed thorough case studies, applying various rock typing approaches, and highlighted the limitations of existing methods while showcasing the applicability and superiority of the newly developed index.}
+%		\resumeItem{Co-authoring a manuscript detailing the findings and significance of the newly proposed rock type index.}
+%	\resumeItemListEnd 
+%	\vspace{-10pt}
+%	
+%	\resumeProjectHeading
+%	{\textbf{Oil Field Development Strategies: A Global Analysis}}{Nov 2022 -- Jan 2023}
+%	\resumeItemListStart
+%	\resumeItem{Conducted extensive research to gather data on oil fields worldwide with a focus on recovery factor.}
+%	\resumeItem{Analyzed the gathered data to identify successful oil fields and their associated development strategies, including government policies and laws.}
+%	\resumeItem{Contributed to the report's recommendations for improving the development strategies of oil fields in Iran.}
+%	\resumeItemListEnd 
+%	\vspace{-10pt}
+%	
+%	\resumeProjectHeading
+%	{\textbf{Material Balance in Hydrate-capped Gas Reservoirs} $|$ \emph{Coure Project}}{Mar 2021 -- May 2021}
+%	\resumeItemListStart
+%	\resumeItem{Conducted research on material balance in Hydrate-capped Gas Reservoirs as a course project in Reservoir Engineering II.}
+%	\resumeItem{Studied the formation and stability conditions of gas hydrate reservoirs.}
+%	\resumeItem{Presented the findings of the study in a comprehensive report and delivered an oral presentation to the course instructor and classmates.}
+%	\resumeItemListEnd 
+%	\vspace{-10pt}
+%	
+%	\resumeProjectHeading
+%	{\textbf{Sudoku Solver Application} $|$ \emph{Course Project}}{Jan 2019}
+%	\resumeItemListStart
+%	\resumeItem{Developed a Python program with GUI to solve Sudoku puzzles.}
+%	\resumeItemListEnd 
+%	%	
+%	\resumeSubHeadingListEnd
+%	\vspace{2pt}
+%%	\vspace{0.5cm}
+%
+%
+%
+%%-----------EXPERIENCE-----------
+%\section{\bluesection{Work Experience}}
+%\resumeSubHeadingListStart
+%
+%\resumeSubheading
+%{Internship}{July 2021 -- Sep 2021}
+%{\authorimg{images/Persia.png} \href{http://www.persia-oil.com/index.aspx?siteid=3}{Persia Oil and Gas Company}}{Tehran, Iran}
+%\resumeItemListStart
+%\resumeItem{Gained hands-on experience with production engineering tasks and workflows.}
+%\resumeItem{Conducted a project on modeling multi-fluid flow behavior from reservoir to surface facilities using OLGA software.}
+%\resumeItemListEnd
+%
+%\resumeSubheading
+%{Research Assistant}{Jan 2021 -- Present}
+%{\authorimg{images/UT.png} \href{https://ipe.ut.ac.ir/}{Institute of Petroleum Engineering (IPE), Tehran University}}{Tehran, Iran}
+%\resumeItemListStart
+%\resumeItem{Supervisor: Dr. Behnam Sedaee}
+%\resumeItemListEnd
+%
+%\resumeSubheading
+%{Teaching Assistant}{Jan 2022 -- Jun 2022}
+%{\authorimg{images/UT.png} \href{https://ipe.ut.ac.ir/}{Institute of Petroleum Engineering (IPE)}, Tehran University}{Tehran, Iran}
+%\resumeItemListStart
+%\resumeItem{Reservoir Engineering II}
+%\resumeItem{Instructor: Dr. Behnam Sedaee}
+%\resumeItemListEnd
+%
+%\resumeSubHeadingListEnd
+%%\vspace{-10pt}	
+%\vspace{2pt}
+%
+%	
+%\section{\bluesection{Honors and Awards}}
+%	\vspace{-5pt}
+%	\resumeSubHeadingListStart
+%	\resumeProjectHeading
+%	{\textbf{Top Rank Certification at Faculty of Engineering (FOE)}}{Sep 2020 - Sep 2022}
+%	\resumeItemListStart
+%	\resumeItem{Ranked 4\ts{th} among 25\ts{th} student}
+%	\resumeItemListEnd
+%	\resumeSubHeadingListEnd 
+%%	\vspace{-13pt}
+%		
+%	
+%%\vspace{2pt}	
+%%------RELEVANT COURSEWORK-------
+%\section{\bluesection{Relevant Course}}
+%	\begin{multicols}{3}
+%		\begin{itemize}[itemsep=-1pt, parsep=4pt]
+%			\item\small Reservoir Rock Properties (4/4)
+%			\item Reservoir Engineering I, II (4/4)
+%			\item Enhanced Oil Recovery (4/4)
+%			\item Well Testing (4/4)
+%			\item Well Loging (4/4)
+%			\item Production Engineering (4/4)
+%		\end{itemize}
+%	\end{multicols}
+%%	\vspace*{2.0\multicolsep}
+%
+%
+%	
+%%------Online COURSE-------
+%\section{\bluesection{Online Course}}
+%
+%\begin{multicols}{2}
+%	\begin{itemize}[itemsep=1pt, parsep=5pt]
+%		\item\small \authorimg{images/ds-algorithm.png} \href{https://maktabkhooneh.org/course/189-%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C-%D8%A7%D9%84%DA%AF%D9%88%D8%B1%DB%8C%D8%AA%D9%85-mk189/}{Data Structure and Algorithm}
+%		\item \authorimg{images/python.png} \href{https://www.pytopia.ai/course/python}{Python Programming}
+%		\item \authorimg{images/git.png} \href{https://www.pytopia.ai/course/git}{Git}
+%		\item \authorimg{images/ml.png} \href{https://www.coursera.org/specializations/machine-learning-introduction}{Machine Learning Specialization}
+%		\item \authorimg{images/ml-logo.png} \href{https://www.pytopia.ai/course/ml}{Machine Learning}
+%		\item \authorimg{images/ubuntu.jpg} \href{https://www.udemy.com/course/linux-administration-bootcamp/}{Linux Administration Bootcamp}
+%	\end{itemize}
+%\end{multicols}
+%%\vspace*{1.0\multicolsep}
+%
+%\vspace{3pt}
+%%-----------PROGRAMMING SKILLS-----------
+%\section{\bluesection{Technical Skills}}
+%\begin{itemize}[leftmargin=0.15in, label={}]
+%	\small{\item{
+%			\textbf{Programming/Scripting} \hspace*{.98cm}{:}\hspace*{0.5cm} {Python, Visual Basic, \LaTeX}}
+%		\item{
+%			\textbf{Dev Tools} \hspace*{3.2cm}{:}\hspace*{0.5cm} {VS Code, Pycharm, Linux, Git}
+%		}
+%		\item{
+%			\textbf{Frameworks} \hspace*{2.75cm}{:}\hspace*{0.5cm} {Numpy, Pandas, Tensorflow, Scikit-learn, Matplotlib, Seaborn, Qt} 
+%		}
+%		\item{
+%			\textbf{Softwares} \hspace*{3.12cm}{:}\hspace*{0.5cm} {Saphir, Eclipse, OLGA, Microsoft Office} 
+%		}
+%	\item{
+%			\textbf{Soft skills} \hspace*{3.18cm}{:}\hspace*{0.5cm} {Teamwork, Project Management, Fast Learner, Problem-solving, Initiative}
+%		}
+%	
+%}
+%\end{itemize}	
+%\vspace{-10pt}
+%
+%
+%
+%%-----------Languages---------------
+%\section{\bluesection{Languages}}
+%\begin{itemize}[leftmargin=0.15in, label={}]
+%	\small{\item{
+%			\textbf{Persian}{: Native} \\
+%			\textbf{English}{: Fluent (TOEFL iBT will be taken on 14\textsuperscript{th} Oct.)} \\
+%	}}
+%\end{itemize}
+%\vspace{-16pt}
+%	
+%%------References-------
+%\vspace{0.75cm}
+%\centering{\textbf{	\faExclamationCircle \hspace{0.5 pt} References, Further information, and Proofs are available upon Request.}
+%
+%
+\end{document}
